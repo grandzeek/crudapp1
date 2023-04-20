@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verify</title>
+  <script type="text/javascript">
+    function validate(){
+      var username=document.getElementById("u");
+      var password=document.getElementById("pwrd");
+
+      if(username.value==""||password.value==""){
+        alert("No blank values allowed");
+        return false
+      }
+      else {
+        return true
+      }
+    }
+
+  </script>
+    <style>
+        form{
+            background-color: lightblue;
+            color: black;
+            width: 1000px;
+            height: 150px;
+            margin-right: 30px;
+            margin-left: 90px;
+            padding: 150px;
+            align-content: center;
+            border-radius: 15px;
+        }
+        input{
+            border-radius: 10px;
+        }
+        button{
+            width: 50px;
+            height: 30px;
+        }
+        legend{
+            color: red;
+            font-size: larger;
+            font-weight: 10;
+        }
+    </style>
+</head>
+<body>
+<form onsubmit="return validate()" action="music.html">
+    <legend><u>Verify yourself</u></legend>
+    <br>
+
+  <label for="u">Username:</label><br>
+  <input type="text" id="u"><br><br>
+
+  <label for="pwrd">Password:</label><br>
+  <input type="password" id="pwrd"><br><br>
+
+    <a href="contactus.html"><button  type="submit">Submit</button></a>
+  <br><br>
+
+</form>
+
+</body>
+</html>
